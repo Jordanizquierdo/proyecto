@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +9,12 @@
 </head>
 <body>
     <div id="div1">
-        <h1>Bienvenido a mi pagina</h1>
-        <img src="{%static 'img/serie1.jfif' %}" onclick="location.href='a'">
-        <img src="{%static 'img/serie2.jfif' %}">
-        <img src="{%static 'img/serie3.jfif' %}">
+        <h1>{{nombre}}</h1>
+        <img src="{%static 'img/serie1.jfif' %}">
+        <ul>
+            <li>{{descripcion}}</li>
+            <li>{{valoracion}}</li>
+        </ul>
     </div>
 </body>
 </html>

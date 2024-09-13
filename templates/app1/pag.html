@@ -10,11 +10,15 @@
 <body>
     <div id="div1">
         <h1>{{nombre}}</h1>
-        <img src="{%static 'img/serie1.jfif' %}">
-        <ul>
-            <li>{{descripcion}}</li>
-            <li>{{valoracion}}</li>
-        </ul>
+        <img src="{{img1}}">
     </div>
+    <div id="div2">
+        <ul>
+            <li>Descripcion: {{descripcion}}</li>
+            <li>Valoracion: {{valoracion}}</li>
+        </ul>
+        <button onclick="location.href='/'" id="btn">Volver</button>
+    </div>
+
 </body>
 </html>
